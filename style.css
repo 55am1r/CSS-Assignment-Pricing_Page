@@ -8,22 +8,6 @@
     font-family: 'Albert Sans', sans-serif;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    justify-content: center;
-    height: 50vh;
-    margin-top: 25vh;
-}
-
-.container .plans-1,
-.plans-2,
-.plans-3 {
-    width: 20vw;
-    text-align: center;
-    height: 78.5%;
-}
 
 .container .plans-1 .plan,
 .plans-2 .plan,
@@ -128,7 +112,7 @@
 
 .container .plans-1:hover .plan {
     background-color: rgba(84, 84, 84, 0.678);
-    
+
 }
 
 .container .plans-2:hover .btn,
@@ -148,6 +132,115 @@
 .container .plans-3:hover .plan {
     background-color: rgba(112, 112, 112, 0.678);
 }
-.btn:active{
+
+.btn:active {
     transform: translateY(0.1rem);
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        gap: 50px;
+        margin-bottom: 10vh;
+    }
+
+    .container .plans-1,
+    .plans-2,
+    .plans-3 {
+        width: 90vw;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        gap: 50px;
+        margin-bottom: 10vh;
+    }
+
+    .container .plans-1,
+    .plans-2,
+    .plans-3 {
+        width: 50vw;
+        text-align: center;
+    }
+}
+/* @media screen and (min-width:500px) and (max-width:768px) and (orientation:landscape){
+    .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+            gap: 50px;
+            margin-bottom: 10vh;
+        }
+    
+        .container .plans-1,
+        .plans-2,
+        .plans-3 {
+            width: 100vw;
+            text-align: center;
+        }
+} */
+@media screen and (min-width:768px) and (max-width:992px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15vh;
+        gap: 50px;
+        margin-bottom: 10vh;
+    }
+
+    .container .plans-1,
+    .plans-2,
+    .plans-3 {
+        width: 50vw;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1024px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+        margin-top: 20vh;
+    }
+
+    .container .plans-1,
+    .plans-2,
+    .plans-3 {
+        width: 25vw;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+        margin-top: 25vh;
+    }
+
+    .container .plans-1,
+    .plans-2,
+    .plans-3 {
+        width: 20vw;
+        text-align: center;
+    }
 }
