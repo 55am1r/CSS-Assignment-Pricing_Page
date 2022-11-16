@@ -137,7 +137,7 @@
     transform: translateY(0.1rem);
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:480px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -151,12 +151,12 @@
     .container .plans-1,
     .plans-2,
     .plans-3 {
-        width: 90vw;
+        width: 80vw;
         text-align: center;
     }
 }
 
-@media screen and (min-width:500px) and (max-width:768px) {
+@media screen and (min-width:481px) and (max-width:768px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -170,29 +170,11 @@
     .container .plans-1,
     .plans-2,
     .plans-3 {
-        width: 50vw;
+        width: 60vw;
         text-align: center;
     }
 }
-/* @media screen and (min-width:500px) and (max-width:768px) and (orientation:landscape){
-    .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10vh;
-            gap: 50px;
-            margin-bottom: 10vh;
-        }
-    
-        .container .plans-1,
-        .plans-2,
-        .plans-3 {
-            width: 100vw;
-            text-align: center;
-        }
-} */
-@media screen and (min-width:768px) and (max-width:992px) {
+@media screen and (min-width:768px) and (max-width:1024px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -211,13 +193,13 @@
     }
 }
 
-@media screen and (min-width:992px) and (max-width:1024px) {
+@media screen and (min-width:1025px) and (max-width:1200px) {
     .container {
         display: flex;
         flex-direction: row;
         gap: 50px;
         justify-content: center;
-        margin-top: 20vh;
+        margin-top: 22vh;
     }
 
     .container .plans-1,
@@ -228,7 +210,7 @@
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1201px) {
     .container {
         display: flex;
         flex-direction: row;
